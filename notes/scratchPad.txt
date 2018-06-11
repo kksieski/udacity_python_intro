@@ -1,0 +1,20 @@
+
+
+
+
+
+for line in headlines:
+    counter = 0
+    while len(line) < counter:
+        if len(news_ticker) >= 140:
+            break
+        else: 
+            news_ticker = news_ticker + line[index]
+            index += 1
+            counter += 1
+  
+
+print(news_ticker)
+
+
+

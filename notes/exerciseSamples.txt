@@ -1,0 +1,203 @@
+
+
+# The current volume of a water reservoir (in cubic metres)
+reservoir_volume = 4.445e8
+# The amount of rainfall from a storm (in cubic metres)
+rainfall = 5e6
+
+# decrease the rainfall variable by 10% to account for runoff
+rainfall *= 0.9
+# add the rainfall variable to the reservoir_volume variable
+reservoir_volume += rainfall
+# increase reservoir_volume by 5% to account for stormwater that flows
+# into the reservoir in the days following the storm
+reservoir_volume *= 1.05
+# decrease reservoir_volume by 5% to account for evaporation
+reservoir_volume *= 0.95
+# subtract 2.5e5 cubic metres from reservoir_volume to account for water
+# that's piped to arid regions.
+reservoir_volume -= 2.5 * 10 ** 5
+# print the new value of the reservoir_volume variable
+print(reservoir_volume)
+
+#These two assignments can be abbreviated
+savings = 514.86
+salary = 320.51
+
+#Using multiple assignment
+savings, salary = 514.86, 320.51
+
+
+vowel_count += prophecy.casefold().count('a')
+vowel_count += prophecy.casefold().count('e')
+vowel_count += prophecy.casefold().count('i')
+vowel_count += prophecy.casefold().count('o')
+vowel_count += prophecy.casefold().count('u')
+
+def population_density(population, land_area):
+    """Calculate the population density of an area.
+
+    population: int. The population of the area
+    land_area: int or float. This function is unit-agnostic, if you pass
+               in values in terms of square km or square miles the
+               function will return a density in those units.
+    """
+    return population / land_area
+
+
+def which_prize2(points):
+    """
+    Returns the number of prize-winning message, given a number of points
+    """
+    prize = None
+    if points <= 50:
+        prize = "a wooden rabbit"
+    elif 151 <= points <= 180:
+        prize = "a wafer-thin mint"
+    elif points >= 181:
+        prize = "a penguin"
+
+    if prize:
+        return "Congratulations! You have won " + prize + "!"
+    else:
+        return "Oh dear, no prize this time."
+
+
+"""Write a function, `tag_count`, that takes as its argument a list
+of strings. It should return a count of how many of those strings
+are XML tags. You can tell if a string is an XML tag if it begins
+with a left angle bracket "<" and end with a right angle bracket ">".
+"""
+#TODO: Define the tag_count function
+def tag_count(list1):
+    sum = 0
+    for element in list1:
+        if '<' in element:
+            if '>' in element:
+                sum += 1
+    return sum
+
+# Test for the tag_count function:
+list1 = ['<greeting>', 'Hello World!', '</greeting>']
+count = tag_count(list1)
+print("Expected result: 2, Actual result: {}".format(count))
+
+def tag_count(tokens):
+    count = 0
+    for token in tokens:
+        if token[0] == '<' and token[-1] == '>':
+            count += 1
+    return count
+
+#define the  html_list function
+def html_list(list_strings):
+    new_list = ['<ul>']
+    for index in range(len(list_strings)): 
+        list_strings[index] = '<li>' + list_strings[index] + '</li>'
+        new_list.append(list_strings[index])
+    new_list.append('</ul>')
+    new_list = "\n".join(new_list)
+    return new_list
+
+        
+print(html_list(['test','test2']))
+
+def html_list(list_items):
+    HTML_string = "<ul>\n"
+    for item in list_items:
+        HTML_string += "<li>{}</li>\n".format(item)
+    HTML_string += "</ul>"
+    return HTML_string
+
+
+def starbox(width, height):
+    """print a box made up of asterisks.
+
+    width: width of box in characters, must be at least 2
+    height: height of box in lines, must be at least 2
+    """
+    print("*" * width) #print top edge of box
+
+    # print sides of box
+    for _ in range(height-2):
+        print("*" + " " * (width-2) + "*") 
+
+    print("*" * width) #print bottom edge of box
+
+
+
+
+
+headlines = ["Local Bear Eaten by Man",
+             "Legislature Announces New Laws",
+             "Peasant Discovers Violence Inherent in System",
+             "Cat Rescues Fireman Stuck in Tree",
+             "Brave Knight Runs Away",
+             "Papperbok Review: Totally Triffic"]
+
+news_ticker = ""
+# TODO: set news_ticker to a string that contains no more than 140 characters long.
+# HINT: modify the headlines list to verify your loop works with different inputs
+index = 0
+
+s = ' '.join(str(i) for i in headlines)
+print(s)
+
+for i in s:
+    if len(news_ticker) >= 140:
+        break
+    else:
+        news_ticker = news_ticker + i
+  
+print(news_ticker)
+
+
+for headline in headlines:
+    news_ticker += headline + " "
+    if len(news_ticker) >= 140:
+        news_ticker = news_ticker[:140]
+        break
+
+
+for country in countries:
+    if country in country_counts:
+        country_counts[country] += 1
+    else:
+        country_counts[country] = 1
+
+
+
+
+monthly_takings = {'January': [54, 63], 'February': [64, 60], 'March': [63, 49],
+                   'April': [57, 42], 'May': [55, 37], 'June': [34, 32],
+                   'July': [69, 41, 32], 'August': [40, 61, 40], 'September': [51, 62],
+                   'October': [34, 58, 45], 'November': [67, 44], 'December': [41, 58]}
+
+def total_takings(monthly_takings):
+    month_sum = []
+    for month in monthly_takings:
+        for sum in monthly_takings[month]:
+            month_sum.append(sum)
+    yearly_takings = 0
+    for val in month_sum:
+        yearly_takings += val
+    return yearly_takings
+
+
+print(total_takings(monthly_takings))
+    
+
+def total_takings(yearly_record):
+    #total is used to sum up the monthly takings
+    total = 0
+    for month in yearly_record.keys():
+        #I use the Python function sum to sum up over 
+        #all the elements in a list
+        total = total + sum(yearly_record[month])
+    return total
+
+
+
+
+
+

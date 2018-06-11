@@ -1,0 +1,44 @@
+** exponentiation
+^ bitwise xor
+% modulo
+// integer division, always rounds down
+# comments a line of code
+
+REassignment Operators
+>>> manila_pop += 1675 # increase the value of manila_pop by 1675
+>>> manila_pop -= 250 # decrease the value of manila_pop by 250
+>>> manila_pop *= 0.9 # decimate manila_pop
+>>> manila_area /=  2 # approximate the female population of Manila
+
+
+Operator Name	Symbol
+less than	<
+greater than	>
+less than or equal to	<=
+greater than or equal to	>=
+equal to	==
+not equal to	!=
+
+\ escape operator, escapes quotes
+
+log_message = "IP address {} accessed {} at {}".format(user_ip, url, now)
+
+Docstrings are surrounded by triple quotes, """. The first line of the docstring is a brief explanation of the function's purpose. If you feel that this is sufficient documentation you can end the docstring at this point, single line docstrings are perfectly acceptable. If you think that the function is complicated enough to warrant a longer description, you can add a more thorough paragraph after the one line summary.
+
+The next element of a docstring is an explanation of the function's arguments. Here you list the arguments, state their purpose, and what types the arguments should be.
+
+
+Steps to build a function piece by piece
+Here's a review of what you had to do to build the scores_to_rating() function piece by piece
+
+Gather the requirements for the function, including inputs and output
+Break that process down into steps in plain language first, not code.
+Create an outline of a function that performed each of these steps, including helper functions that had not yet been defined.
+At this stage, adjust the steps to make them easier to code up
+Create outlines of the helper functions.
+Fill in the code of the helper functions, testing their functionality.
+Complete the code of the main function to call each of the helper functions, and test the functionality.
+Amazing work! You can follow the same kind of process every time you have a program to build.
+
+
+

@@ -1,0 +1,15 @@
+https://docs.python.org/3/library/stdtypes.html#string-methods
+https://docs.python.org/3/reference/lexical_analysis.html#keywords
+https://docs.python.org/3/tutorial/errors.html
+https://www.python.org/dev/peps/pep-0008/
+https://www.jetbrains.com/help/pycharm/2017.2/using-git-integration.html?utm_medium=help_link&utm_source=from_product&utm_campaign=PC&utm_content=2017.2#register-account
+https://www.python.org/dev/peps/pep-0257/
+
+
+
+
+
+
+
+
+

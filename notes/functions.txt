@@ -1,0 +1,48 @@
+print()
+len()
+type()
+str()
+int()
+float()
+range()
+
+
+METHODS
+str..title()
+str..islower()
+.is_integer()
+str.count
+str.format
+.append
+.pop()
+
+
+
+
+
+
+
+
+f = open('/my_path/my_file.txt','r')
+file_data = f.read()
+f.close()
+
+with open('/my_path/my_file.txt','r') as f:
+    file_data = f.read()
+
+pip3 install -r requirements.txt
+
+
+
+requirements.txt
+Larger Python programs might depend on dozens of third party packages. To make it easier to share these programs programmers often list a project's dependencies in a file called requirements.txt. This is an example requirements.txt file:
+
+beautifulsoup4==4.5.1
+bs4==0.0.1
+pytz==2016.7
+requests==2.11.1
+Each line of the file includes the name of a package and its version number. The version number is technically optional, but it usually should be included. Libraries can change subtly (or dramatically!) between versions, so it's important to use the same library versions that the program's author had when they wrote the program.
+
+You can use pip to install all of a project's dependencies at once with this command:
+
+$ pip3 install -r requirements.txt
